@@ -19,7 +19,7 @@ COPY build.sh /
 COPY install-dependencies.sh /
 RUN chmod +x /install-dependencies.sh && /install-dependencies.sh
 RUN chmod +x /build.sh
-
+RUN mkdir -p /root/.ivy2
 VOLUME /build
 VOLUME /buid/cloudstate/tck/src/it/resources
 
